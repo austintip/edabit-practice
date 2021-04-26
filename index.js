@@ -13,11 +13,36 @@
 function howManyWalls(n, w, h) {
     if (w * h > n) {
         return 0
-        console.log(0)
     }
     else {
-        let walls = parseInt(n /(w * h))
+        let walls = parseInt(n / (w * h))
         return walls
-        console.log(walls)
+    }
+}
+
+// Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
+
+// Can you help her?
+
+// Examples
+// greeting("Matt") ➞ "Hello, Matt!"
+
+// greeting("Helen") ➞ "Hello, Helen!"
+
+// greeting("Mubashir") ➞ "Hello, my Love!"
+
+//Original code:
+// function greeting(name) {
+//     return "Hello, " + name + "!";
+//     if(name == "Mubashir") {
+//       return "Hello, my Love!";
+//     }
+//   }
+
+function greeting(name) {
+    if (name = "Mubashir") {
+        return "Hello, my Love!";
+    } else {
+        return "Hello, " + name + "!";
     }
 }
